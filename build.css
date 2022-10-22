@@ -148,5 +148,31 @@ body main #galerie-content img {
   max-width: 100%;
   padding-top: 5%;
 }
+body footer {
+  height: 120px;
+}
+body footer img {
+  max-height: 120px;
+}
+
+@media (max-width: 600px) {
+  .genre {
+    display: flex;
+    flex-direction: column;
+  }
+  #info-content {
+    grid-template-columns: 1fr 3fr 3fr 1fr !important;
+  }
+  #info-content .info-column {
+    grid-column: 2/3;
+    margin-left: 0;
+  }
+  #info-content .info-answer {
+    grid-column: 3/4;
+  }
+  #info-content img {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=build.css.map */
